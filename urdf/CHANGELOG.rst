@@ -2,72 +2,43 @@
 Changelog for package urdf
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1.12.12 (2017-11-08)
+1.11.15 (2017-11-08)
 --------------------
-* Switched to package format 2 and made rostest a test_depend (`#221 <https://github.com/ros/robot_model/pull/221>`_)
-* Made rostest a test_depend (`#221 <https://github.com/ros/robot_model/pull/221>`_)
-* Added missing dependency on tinyxml (`#213 <https://github.com/ros/robot_model/pull/213>`_)
-* Contributors: Chris Lalancette, Mikael Arguedas
+* Added Add initParamWithNodeHandle `#193 <https://github.com/ros/robot_model/pull/193>`_
+* Removed pcrecpp from dependencies `#216 <https://github.com/ros/robot_model/pull/216>`_
+* Added forward declaration on Model `#217 <https://github.com/ros/robot_model/pull/217>`_
+* Contributors: Michael Görner, Chris Lalancette, Mike Liu
 
-
-1.12.11 (2017-06-27)
+1.11.14 (2017-08-14)
 --------------------
-* Shared ptr yakkety (`#207 <https://github.com/ros/robot_model/issues/207>`_)
-  * Forward declare urdf::Model when urdfdom version is > 0.4
-  * Add test for upcasting from urdf::ModelSharedPtr to urdf::ModelInterfaceSharedPtr
-* Contributors: Shane Loretz
+* add missing build/build_export/run dependency on tinyxml `#214 <https://github.com/ros/robot_model/issues/214>`_
+* add missing ModelSharedPtr typedefs in indigo `#210 <https://github.com/ros/robot_model/issues/210>`_
+* Contributors: Michael Görner, Shane Loretz
 
-1.12.10 (2017-06-24)
+1.11.13 (2017-03-27)
 --------------------
-* Change urdf::Model to use std::shared_ptrs in urdfdom > v0.4 (`#206 <https://github.com/ros/robot_model/issues/206>`_)
-* Contributors: Dave Coleman
-
-1.12.9 (2017-04-26)
--------------------
-
-1.12.8 (2017-03-27)
--------------------
-* Allow supplying NodeHandle for initParam (`#168 <https://github.com/ros/robot_model/issues/168>`_)
-  * Allow supplying NodeHandle for initParam using new function.
-  * fixed missing return statement in previous commit.
-* add Chris and Shane as maintainers (`#184 <https://github.com/ros/robot_model/issues/184>`_)
-* fix missed mandatory -std=c++11 flag (`#181 <https://github.com/ros/robot_model/issues/181>`_)
-  collada_parser,kdl_parser,urdf: add c++11 flag,
-  collada_parser: replace typeof with ansi __typeof\_\_
-  builded/tested on gentoo
-  Thanks den4ix for the contribution!
-* Contributors: Denis Romanchuk, Piyush Khandelwal, William Woodall
-
-1.12.7 (2017-01-26)
--------------------
-
-1.12.6 (2017-01-04)
--------------------
-* Addressed gcc6 build error in the urdf package, forward port of `#156 <https://github.com/ros/robot_model/issues/156>`_ (`#173 <https://github.com/ros/robot_model/issues/173>`_)
-* Now using ``urdf::*ShredPtr`` instead of ``boost::shared_ptr`` (`#144 <https://github.com/ros/robot_model/issues/144>`_)
+* Use urdf::*ShredPtr instead of boost::shared_ptr (`#144 <https://github.com/ros/robot_model/issues/144>`_)
+* add Chris and Shane as maintainers (`#185 <https://github.com/ros/robot_model/issues/185>`_)
 * Contributors: Jochen Sprickerhof, William Woodall
 
-1.12.5 (2016-10-27)
--------------------
-* Added urdf_compatibility.h header to define SharedPtr types (`#160 <https://github.com/ros/robot_model/issues/160>`_)
-  This provides portability for downstream packages allowing them to use urdfdom 0.3 or 0.4.
-* urdf: Explicitly cast shared_ptr to bool in unit test. (`#158 <https://github.com/ros/robot_model/issues/158>`_)
-* Add smart ptr typedefs (`#153 <https://github.com/ros/robot_model/issues/153>`_)
-* Addressed gcc6 build error in urdf which was related to use of the isystem flag (`#157 <https://github.com/ros/robot_model/issues/157>`_)
-* Remove unneeded dependency on libpcrecpp (`#155 <https://github.com/ros/robot_model/issues/155>`_)
-* Contributors: Bence Magyar, Jochen Sprickerhof, Lukas Bulwahn, Maarten de Vries, Robert Haschke
+1.11.12 (2017-01-04)
+--------------------
+* Added ``urdf_compatibility.h`` to define ``SharedPtr`` types, copy of `#160 <https://github.com/ros/robot_model/issues/160>`_ (`#170 <https://github.com/ros/robot_model/issues/170>`_)
+* Addressed gcc6 build error in the urdf package (`#156 <https://github.com/ros/robot_model/issues/156>`_)
+* Contributors: Lukas Bulwahn, Michael Görner
 
-1.12.4 (2016-08-23)
--------------------
+1.11.11 (2016-06-10)
+--------------------
 
-1.12.3 (2016-06-10)
--------------------
+1.11.10 (2016-02-23)
+--------------------
 
-1.12.2 (2016-04-12)
+1.11.9 (2016-02-22)
 -------------------
-
-1.12.1 (2016-04-10)
--------------------
+* Add Jackie as a maintainer
+* test_robot.urdf: fix indentation
+* Overhaul tests in urdf
+* Contributors: Jackie Kay, Steven Peters
 
 1.11.8 (2015-09-11)
 -------------------

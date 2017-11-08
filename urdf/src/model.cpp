@@ -36,6 +36,8 @@
 
 #include "urdf/model.h"
 
+#include <ros/ros.h>
+
 /* we include the default parser for plain URDF files; 
    other parsers are loaded via plugins (if available) */
 #include <urdf_parser/urdf_parser.h>
@@ -92,7 +94,7 @@ bool Model::initParam(const std::string& param)
 bool Model::initParamWithNodeHandle(const std::string& param, const ros::NodeHandle& nh)
 {
   std::string xml_string;
-  
+
   // gets the location of the robot description on the parameter server
   std::string full_param;
   if (!nh.searchParam(param, full_param)){
