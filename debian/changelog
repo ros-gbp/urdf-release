@@ -1,0 +1,135 @@
+ros-indigo-urdf (1.11.15-0trusty) trusty; urgency=high
+
+
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Fri, 03 Nov 2017 07:00:00 -0000
+
+ros-indigo-urdf (1.11.14-0trusty) trusty; urgency=high
+
+  * add missing build/build_export/run dependency on tinyxml #214 <https://github.com/ros/robot_model/issues/214>
+  * add missing ModelSharedPtr typedefs in indigo #210 <https://github.com/ros/robot_model/issues/210>
+  * Contributors: Michael Görner, Shane Loretz
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Mon, 14 Aug 2017 07:00:00 -0000
+
+ros-indigo-urdf (1.11.13-0trusty) trusty; urgency=high
+
+  * Use urdf::*ShredPtr instead of boost::shared_ptr (#144 <https://github.com/ros/robot_model/issues/144>)
+  * add Chris and Shane as maintainers (#185 <https://github.com/ros/robot_model/issues/185>)
+  * Contributors: Jochen Sprickerhof, William Woodall
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Mon, 27 Mar 2017 07:00:00 -0000
+
+ros-indigo-urdf (1.11.12-0trusty) trusty; urgency=high
+
+  * Added ``urdf_compatibility.h`` to define ``SharedPtr`` types, copy of #160 <https://github.com/ros/robot_model/issues/160> (#170 <https://github.com/ros/robot_model/issues/170>)
+  * Addressed gcc6 build error in the urdf package (#156 <https://github.com/ros/robot_model/issues/156>)
+  * Contributors: Lukas Bulwahn, Michael Görner
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Wed, 04 Jan 2017 08:00:00 -0000
+
+ros-indigo-urdf (1.11.11-0trusty) trusty; urgency=high
+
+
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Fri, 10 Jun 2016 07:00:00 -0000
+
+ros-indigo-urdf (1.11.10-0trusty) trusty; urgency=high
+
+
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Tue, 23 Feb 2016 08:00:00 -0000
+
+ros-indigo-urdf (1.11.9-0trusty) trusty; urgency=high
+
+  * Add Jackie as a maintainer
+  * test_robot.urdf: fix indentation
+  * Overhaul tests in urdf
+  * Contributors: Jackie Kay, Steven Peters
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Mon, 22 Feb 2016 08:00:00 -0000
+
+ros-indigo-urdf (1.11.8-0trusty) trusty; urgency=high
+
+  * Removed pcre hack for newer released collada-dom.
+  * Fixed link order of libpcrecpp.
+  * Contributors: Kei Okada
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Fri, 11 Sep 2015 07:00:00 -0000
+
+ros-indigo-urdf (1.11.7-0trusty) trusty; urgency=high
+
+  * Removed the exporting of Boost and pcre as they are not used in the headers, and added TinyXML because it is.
+  * Fixed a bug with pcrecpp on Ubuntu > 13.04.
+  * Contributors: Kei Okada, William Woodall
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Wed, 22 Apr 2015 07:00:00 -0000
+
+ros-indigo-urdf (1.11.6-0trusty) trusty; urgency=high
+
+  * Add install for static libs needed for Android cross-compilation
+  * Contributors: Gary Servin
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Sun, 30 Nov 2014 08:00:00 -0000
+
+ros-indigo-urdf (1.11.5-0trusty) trusty; urgency=high
+
+
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Thu, 24 Jul 2014 07:00:00 -0000
+
+ros-indigo-urdf (1.11.4-0trusty) trusty; urgency=high
+
+  * moving to new dependency for urdfdom and urdfdom_headers. https://github.com/ros/rosdistro/issues/4633
+  * Contributors: Tully Foote
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Mon, 07 Jul 2014 07:00:00 -0000
+
+ros-indigo-urdf (1.11.3-0trusty) trusty; urgency=high
+
+  * fix urdfdom_headers find_package re ros/rosdistro#4633 <https://github.com/ros/rosdistro/issues/4633>
+  * Contributors: Tully Foote
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Tue, 24 Jun 2014 07:00:00 -0000
+
+ros-indigo-urdf (1.11.2-0trusty) trusty; urgency=high
+
+
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Sat, 22 Mar 2014 07:00:00 -0000
+
+ros-indigo-urdf (1.11.1-0trusty) trusty; urgency=high
+
+
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Thu, 20 Mar 2014 07:00:00 -0000
+
+ros-indigo-urdf (1.11.0-0trusty) trusty; urgency=high
+
+  * fix urdf files for test
+  * fix test at urdf
+  * Contributors: YoheiKakiuchi
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Fri, 21 Feb 2014 08:00:00 -0000
+
+ros-indigo-urdf (1.10.18-0trusty) trusty; urgency=high
+
+  * add DEPENDS for kdl_parser
+  * Contributors: Ioan Sucan
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Wed, 04 Dec 2013 08:00:00 -0000
+
+ros-indigo-urdf (1.10.16-0trusty) trusty; urgency=high
+
+  * check for CATKIN_ENABLE_TESTING
+  * fix for using collada_parser_plugin
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Mon, 18 Nov 2013 08:00:00 -0000
+
+ros-indigo-urdf (1.10.15-0trusty) trusty; urgency=high
+
+  * fix #30 <https://github.com/ros/robot_model/issues/30>
+
+ -- Chris Lalancette <clalancette@osrfoundation.org>  Sat, 17 Aug 2013 07:00:00 -0000
+
+
