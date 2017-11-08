@@ -1,3 +1,28 @@
+## urdf (lunar) - 1.12.12-0
+
+The packages in the `urdf` repository were released into the `lunar` distro by running `/usr/bin/bloom-release --track=lunar --rosdistro=lunar urdf` on `Wed, 08 Nov 2017 19:21:25 -0000`
+
+These packages were released:
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `urdf`:
+
+- upstream repository: https://github.com/ros/urdf.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `1.12.12-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.6`
+- rosdep version: `0.11.8`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## urdf (kinetic) - 1.12.12-0
 
 The packages in the `urdf` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track=kinetic --rosdistro=kinetic urdf` on `Wed, 08 Nov 2017 19:09:30 -0000`
