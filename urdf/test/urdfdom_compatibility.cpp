@@ -1,7 +1,7 @@
 /*********************************************************************
 * Software License Agreement (BSD License)
 *
-*  Copyright (c) 2008, Willow Garage, Inc.
+*  Copyright (c) 2017 Open Source Robotics Foundation
 *  All rights reserved.
 *
 *  Redistribution and use in source and binary forms, with or without
@@ -32,53 +32,23 @@
 *  POSSIBILITY OF SUCH DAMAGE.
 *********************************************************************/
 
-/* Author: Wim Meeussen */
-
-#ifndef URDF__MODEL_H_
-#define URDF__MODEL_H_
+#include <gtest/gtest.h>
 
 #include <string>
 
-#include <urdf_model/model.h>
+#include "urdf/model.h"
 
-#include <urdf/urdfdom_compatibility.h>
 
-#include <tinyxml.h>
+TEST(UrdfCompatibility, UpcastSharedPtr) {
+  urdf::ModelSharedPtr model(new urdf::Model);
+  model->name_ = "UpcastSharedPtr";
+  urdf::ModelInterfaceSharedPtr interface = model;
+  EXPECT_EQ(std::string("UpcastSharedPtr"), interface->getName());
+}
 
-#include <tinyxml2.h>
 
-#include <ros/ros.h>
-
-#include "urdf/visibility_control.hpp"
-
-namespace urdf
+int main(int argc, char ** argv)
 {
-
-class Model : public ModelInterface
-{
-public:
-  /// \brief Load Model from TiXMLElement
-  URDF_EXPORT URDF_DEPRECATED("TinyXML API is deprecated, use the TinyXML2 version instead") bool initXml(TiXmlElement * xml);
-  /// \brief Load Model from TiXMLDocument
-  URDF_EXPORT URDF_DEPRECATED("TinyXML API is deprecated, use the TinyXML2 version instead") bool initXml(TiXmlDocument * xml);
-  /// \brief Load Model from tinyxml2::XMLElement
-  URDF_EXPORT bool initXml(tinyxml2::XMLElement *xml);
-  /// \brief Load Model from tinyxml2::XMLDocument
-  URDF_EXPORT bool initXml(tinyxml2::XMLDocument *xml);
-  /// \brief Load Model given a filename
-  URDF_EXPORT bool initFile(const std::string & filename);
-  /// \brief Load Model given the name of a parameter on the parameter server
-  URDF_EXPORT bool initParam(const std::string & param);
-  /// \brief Load Model given the name of parameter on parameter server using provided nodehandle
-  URDF_EXPORT bool initParamWithNodeHandle(const std::string & param,
-    const ros::NodeHandle & nh = ros::NodeHandle());
-  /// \brief Load Model from a XML-string
-  URDF_EXPORT bool initString(const std::string & xmlstring);
-};
-
-// shared_ptr declarations moved to urdf/urdfdom_compatibility.h to allow for
-// std::shared_ptrs in latest version
-
-}  // namespace urdf
-
-#endif  // URDF__MODEL_H_
+  testing::InitGoogleTest(&argc, argv);
+  return RUN_ALL_TESTS();
+}
