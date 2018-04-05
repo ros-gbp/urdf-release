@@ -1,3 +1,28 @@
+## urdf (melodic) - 1.13.1-0
+
+The packages in the `urdf` repository were released into the `melodic` distro by running `/usr/bin/bloom-release urdf --track melodic --rosdistro melodic` on `Thu, 05 Apr 2018 12:59:24 -0000`
+
+These packages were released:
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `urdf`:
+
+- upstream repository: https://github.com/ros/urdf.git
+- release repository: https://github.com/ros-gbp/urdf-release.git
+- rosdistro version: `1.13.0-0`
+- old version: `1.13.0-0`
+- new version: `1.13.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.6.4`
+- catkin_pkg version: `0.4.1`
+- rosdep version: `0.12.2`
+- rosdistro version: `0.6.8`
+- vcstools version: `0.1.40`
+
+
 ## urdf (melodic) - 1.13.0-0
 
 The packages in the `urdf` repository were released into the `melodic` distro by running `/usr/bin/bloom-release urdf --track melodic --rosdistro melodic` on `Mon, 19 Mar 2018 14:02:38 -0000`
