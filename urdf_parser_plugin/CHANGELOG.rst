@@ -2,6 +2,9 @@
 Changelog for package urdf_parser_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.1 (2018-04-05)
+-------------------
+
 1.13.0 (2018-03-19)
 -------------------
 * update links now that this is in its own repo (`#7 <https://github.com/ros/urdf/issues/7>`_)
