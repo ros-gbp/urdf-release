@@ -45,7 +45,7 @@
    other parsers are loaded via plugins (if available) */
 #include <urdf_parser/urdf_parser.h>
 #include <urdf_parser_plugin/parser.h>
-#include <pluginlib/class_loader.h>
+#include <pluginlib/class_loader.hpp>
 
 #include <boost/algorithm/string.hpp>
 #include <boost/scoped_ptr.hpp>
@@ -132,7 +132,7 @@ bool Model::initXml(TiXmlElement * robot_xml)
   return Model::initString(ss.str());
 }
 
-bool Model::initXml(tinyxml2::XMLDocument *xml_doc)
+bool Model::initXml(const tinyxml2::XMLDocument *xml_doc)
 {
   if (!xml_doc) {
     ROS_ERROR("Could not parse the xml document");
@@ -146,7 +146,7 @@ bool Model::initXml(tinyxml2::XMLDocument *xml_doc)
   return Model::initString(str);
 }
 
-bool Model::initXml(tinyxml2::XMLElement *robot_xml)
+bool Model::initXml(const tinyxml2::XMLElement *robot_xml)
 {
   if (!robot_xml) {
     ROS_ERROR("Could not parse the xml element");
