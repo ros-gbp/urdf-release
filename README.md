@@ -1,3 +1,28 @@
+## urdf (noetic) - 1.13.3-1
+
+The packages in the `urdf` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic urdf` on `Thu, 10 Apr 2025 22:06:07 -0000`
+
+These packages were released:
+- `urdf`
+- `urdf_parser_plugin`
+
+Version of package(s) in repository `urdf`:
+
+- upstream repository: https://github.com/ros/urdf.git
+- release repository: https://github.com/ros-gbp/urdf-release.git
+- rosdistro version: `1.13.2-1`
+- old version: `1.13.2-1`
+- new version: `1.13.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## urdf (noetic) - 1.13.2-1
 
 The packages in the `urdf` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic urdf` on `Fri, 06 Mar 2020 19:07:46 -0000`
