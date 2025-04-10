@@ -2,6 +2,9 @@
 Changelog for package urdf_parser_plugin
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.13.3 (2025-04-10)
+-------------------
+
 1.13.2 (2020-03-06)
 -------------------
 * Bump CMake version to avoid CMP0048 warning (`#32 <https://github.com/ros/urdf/issues/32>`_)
